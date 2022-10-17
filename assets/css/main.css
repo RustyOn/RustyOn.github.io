@@ -1106,6 +1106,8 @@ input, select, textarea {
 
 /* BG */
 
+	
+
 	#bg {
 		-moz-transform: scale(1.0);
 		-webkit-transform: scale(1.0);
@@ -1118,6 +1120,7 @@ input, select, textarea {
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
+		
 	}
 
 		#bg:before, #bg:after {
@@ -1128,6 +1131,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
+			
 		}
 
 		#bg:before {
@@ -1140,6 +1144,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1147,6 +1152,7 @@ input, select, textarea {
 			background-repeat: no-repeat,
  repeat;
 			z-index: 2;
+			
 		}
 
 		#bg:after {
@@ -1158,12 +1164,13 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/CatEyeBG.PNG");
+			background-image: url("../../images/purpleBG2.jpg");
 			filter:blur(15px);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
+			
 		}
 
 		body.is-article-visible #bg:after {
@@ -1171,10 +1178,10 @@ input, select, textarea {
 			-webkit-transform: scale(1.0825);
 			-ms-transform: scale(1.0825);
 			transform: scale(1.0825);
-			-moz-filter: blur(0.2rem);
-			-webkit-filter: blur(0.2rem);
-			-ms-filter: blur(0.2rem);
-			filter: blur(0.2rem);
+			-moz-filter: blur(0.4rem);
+			-webkit-filter: blur(0.4rem);
+			-ms-filter: blur(0.4rem);
+			filter: blur(0.4rem);
 		}
 
 		body.is-preload #bg:before {
@@ -1534,6 +1541,8 @@ input, select, textarea {
 		z-index: 3;
 	}
 
+	
+
 		#main article {
 			-moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
@@ -1550,6 +1559,9 @@ input, select, textarea {
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
+		}
+		#main article.projectArticle{
+			width:60rem;
 		}
 
 			#main article.active {
@@ -1624,6 +1636,7 @@ input, select, textarea {
 
 		}
 
+
 /* Footer */
 
 	#footer {
@@ -1662,10 +1675,22 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		.center{
+		.aboutIMG{
 			float: left;
 			border-radius: 120px;
 			margin-right: 20px;
+		}
+		.leftWrap{
+			float: left;
+			
+			margin-right: 20px;
+			border-radius: 10px;
+		}
+		.rightWrap{
+			float: right;
+			
+			margin-left: 20px;
+			border-radius: 10px;
 		}
 		p.wraptext{
 			text-align: justify;
@@ -1674,7 +1699,9 @@ input, select, textarea {
 				
 			max-width: 500px;
 			max-height: 450px;
+			margin-right:10px;
 			border-radius: 10px;
+			
 			
 		}
 		h3.projectTitle{
@@ -1698,12 +1725,25 @@ input, select, textarea {
 			
 			
 		}
+		img.devlogo3{
+			display:flex;
+			flex-direction: row;
+			float:right;
+			max-width:80px ;
+			max-height: 80px;
+			padding:2px;
+			
+			
+		}
 
 		a.projectlink{
 			text-decoration: none;
+			border-bottom: 0;
 		}
 		
-
+		article.projectArticle{
+			width:100%;
+		}
 
 		#projects {
 			display: -moz-flex;
@@ -1799,4 +1839,30 @@ input, select, textarea {
 				text-decoration: underline;
 			}
 
+			p.projectTitletxt{
+				font-size: 12px;
+				text-align: left;
+				padding:0;
+				margin:0;
+			}
+
+			
+			a{
+				border-bottom: 0;
+			}
+
+
+			a.gameLink{
+				background-color: #220336;
+				padding:15px;
+				border-radius: 15px;
+			}
+			a.gameLink :hover{
+				background-color: rgba(255, 255, 255, 0.075);
+				padding:15px;
+				border-radius: 15px;
+				transition: ease-in-out 0.2s;
+			}
+			
+			  
 			
