@@ -1745,6 +1745,13 @@ input, select, textarea {
 			width:100%;
 		}
 
+		p.projectTitletxt{
+			font-size: 12px;
+			text-align: left;
+			padding:0;
+			margin:0;
+		}
+
 		#projects {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -1767,6 +1774,7 @@ input, select, textarea {
 			width: 100%;
 			padding: 1rem 2rem;
 			z-index: 3;
+			padding-top: 0;
 		}
 	
 			#projects:before {
@@ -1778,6 +1786,7 @@ input, select, textarea {
 	
 				#projects {
 					padding: 3rem 2rem;
+					padding-top: 0;
 				}
 				img.project{
 					max-width: 420px;
@@ -1800,11 +1809,28 @@ input, select, textarea {
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
+					padding-top: 0;
 					
 				}
 				img.project{
 					margin-top: 15px;
 					
+				}
+				img.devlogo2{
+					max-width:60px ;
+					max-height: 60px;
+				}
+				img.devlogo3{
+					max-width:60px ;
+					max-height: 60px;
+				}
+				img.leftWrap{
+					max-width: 420px;
+					max-height: 270px;
+				}
+				img.rightWrap{
+					max-width: 420px;
+					max-height: 270px;
 				}
 	
 			}
@@ -1821,12 +1847,46 @@ input, select, textarea {
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
+					padding-top: 0;
+					
 					
 				}
 				img.project{
 					margin-top: 15px;
+					max-width: 380px;
 					
 				}
+				img.devlogo{
+					max-width:35px ;
+					max-height: 35px;
+					float:right;
+				}
+				h3.projectTitle{
+					
+					text-align: center;
+				}
+				p.projectTitletxt{
+					/*font-size: 10px;*/
+					text-align: center;
+				}
+				
+				img.devlogo2{
+					max-width:50px ;
+					max-height: 50px;
+				}
+				img.devlogo3{
+					max-width:50px ;
+					max-height: 50px;
+				}
+				img.leftWrap{
+					max-width: 380px;
+					max-height: 230px;
+				}
+				img.rightWrap{
+					max-width: 380px;
+					max-height: 230px;
+				}
+
 	
 			}
 			
@@ -1839,12 +1899,7 @@ input, select, textarea {
 				text-decoration: underline;
 			}
 
-			p.projectTitletxt{
-				font-size: 12px;
-				text-align: left;
-				padding:0;
-				margin:0;
-			}
+			
 
 			
 			a{
