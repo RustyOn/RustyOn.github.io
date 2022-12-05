@@ -2,10 +2,19 @@
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+*//*Collapsible
+document.querySelectorAll(".collapsible").forEach(function(current)){
+	let toggler = document.createElement("div");
+	toggler.className="toggler";
+	current.appendChild(toggler);
+
+	toggler.addEventListener("click", function(e){
+		current.classList.toggle("open");
+	}, false);
+}*/
 
 (function($) {
-
+	
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
@@ -397,5 +406,7 @@
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
+
+		
 
 })(jQuery);
