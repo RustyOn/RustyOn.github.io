@@ -1716,6 +1716,9 @@ input, select, textarea {
 		p.wraptext{
 			text-align: justify;
 		}
+		p.FoundryText{
+			margin:15px;
+		}
 		img.project{
 				
 			max-width: 500px;
@@ -1772,13 +1775,24 @@ input, select, textarea {
 			padding:0;
 			margin:0;
 		}
+		div.FoundryContainer{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
 
 		div.FoundryBox{
+			
 			border: 1px solid;
 			border-color: #6d6b6b;
 			margin-bottom: 40px;
 			height:450px;
 			
+		}
+		div.FoundryWrap{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
 		}
 
 		/*COLLAPSIBLE*/
@@ -1851,6 +1865,11 @@ input, select, textarea {
 			max-height: 370px;
 					
 				}
+				img.rightWrapFoundry{
+					max-width: 50%;
+					max-height: 100%;
+				}
+				
 				/*img.rightWrapFoundry{
 					width:450px;
 					height:500px;
@@ -1956,6 +1975,10 @@ input, select, textarea {
 				img.rightWrap{
 					max-width: 380px;
 					max-height: 230px;
+				}
+				img.rightWrapFoundry{
+					max-width: 50%;
+					max-height: 100%;
 				}
 				
 
